@@ -8,57 +8,76 @@ body{
     background-color: #c6bdbd;
 }
 
-nav{
-    display: flex;
-    background-color: #222222;
-    color: #e5e5e5;
+
+nav {
+  display: flex;
+  background-color: #222222;
+  color: #e5e5e5;
+  padding: 0; /* Remove espaço que empurrava a imagem */
 }
 
-nav a{
-    color:#e5e5e5 ;
-    text-decoration: none;
-    font: bold;
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo à esquerda, menu à direita */
+  align-items: center;
+  width: 100%;
+  padding-right: 20px; /* Espaço só à direita */
 }
 
-nav a i{
-    margin: 5px;
-    padding: 3px;
+/* Agrupa logo + título */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
-nav img{
-    display: inline-block;
-    align-items: center;
-    gap: 10px;
-    width: 100px;
-    border-radius: 50%;
-    border: 2px solid black;
+nav img {
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-left: 0;
 }
 
 nav h1 {
-  margin-left: 10px;
-  font-size: 24px; /* substituído o rem por px */
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.navbar{
-display: flex;
-height: 100%;
-justify-content: space-around;
-align-items: center;
-text-align: center;
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  list-style: none;
 }
 
-nav button{
-    margin: 10px;
-    padding: 10px;
-    color: white;
-    background-color: #5085f8;
-    border:none;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
+nav a {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #e5e5e5;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-nav button:hover{
-    background-color: #82a5f1;
+nav a i {
+  margin-right: 5px;
+}
+
+nav button {
+  padding: 10px 15px;
+  color: white;
+  background-color: #5085f8;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #82a5f1;
 }
 
 .btn{
@@ -68,4 +87,60 @@ nav button:hover{
     border-radius: 20px;
     margin: 3px;
     padding: 3px;
+}
+
+.tabela{
+    margin-top: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.celular{
+    margin-right: 3rem;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.celular img{
+    width: 200px;
+}
+
+.celular button{
+    border-radius: 10px;
+    border: 2px solid #0f0f0f;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+}
+
+.Suporte{
+    background-color: #007bff;
+    
+}
+
+footer{
+    color: white;
+    font-size: medium;
+    font: bold;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: #373737;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    border: 1px solid #121212;
 }
