@@ -5,9 +5,21 @@
 }
 
 body{
-    background-color: #c6bdbd;
+  overflow-x: hidden;
+  background-color: #c6bdbd;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.container{
+  max-width: none;
+  width: 100%;
+  margin: 0 auto;
+}
 
 nav {
   display: flex;
@@ -95,16 +107,19 @@ nav button:hover {
     padding-right: 3px;
     overflow: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 20px;
 }
 
 .celular{
-    margin-right: 3rem;
-    padding: 5px;
+    padding: 15px;
     border: 2px solid black;
     border-radius: 10px;
+    width: 250px;
+    margin-bottom: 20px;
 }
 
 .celular img{
@@ -124,8 +139,41 @@ nav button:hover {
 }
 
 .Suporte{
+    border-radius: 20px;
     background-color: #007bff;
-    
+    margin: auto;
+    padding: 5px;
+    width: 400px;
+    height: 400px;
+
+}
+
+.inputs{
+    margin: 5px;
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+}
+
+.inputs button{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+input{
+display: flex;
+border: 1px solid #212221;
+border-radius: 20px;
+margin: 5px;
+padding: 5px;
+}
+
+input::placeholder {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 footer{
