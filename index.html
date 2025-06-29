@@ -19,15 +19,19 @@
             <a href="#"><i class="fa-solid fa-house"></i>Home</a>
             <a href="#"><i class="fa-solid fa-mobile-retro"></i>Celular</a>
             <a href="#"><i class="fa-solid fa-gear"></i>Suporte</a>
-            <button>Produtos</button>
+            <button>Saudação</button>
             </ul>
         </nav>
         </header>
         <main>
+            <div class="S">
                 <h2>Sobre Nos</h2>
                 <h2 id="hello"></h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe molestiae repellendus, velit dolorum commodi sunt. Incidunt magni inventore temporibus voluptate commodi cumque odio, libero repellat, tenetur ex dignissimos pariatur quam.</p>
-                <a href="#"><button class="btn">Clique Aqui</button></a>
+                    <div class="box">
+                        <input type="text" id="nomeUsuario" placeholder="Digite seu nome">
+                        <button onclick="enviarNome()">Enviar</button>
+                 </div>
+                <p id="fala">Olá cliente, seja bem-vindo(a) à nossa loja de celulares</p>
             </div>
             <!--celular-->
             <div>
@@ -60,7 +64,7 @@
                         <h2><i class="fa-brands fa-pix"></i> 5.000</h2>
                         <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
                     </div>
-                                        <div class="celular">
+                    <div class="celular">
                         <img src="assets/iphone.png">
                         <h3>IPHONE-13</h3>
                         <h2><i class="fa-solid fa-credit-card"></i> R$ 9.000</h2>
@@ -88,6 +92,21 @@
                         <h2><i class="fa-brands fa-pix"></i> 5.000</h2>
                         <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
                     </div>
+                    <div class="celular">
+                        <img src="assets/iphone.png">
+                        <h3>IPHONE-13</h3>
+                        <h2><i class="fa-solid fa-credit-card"></i> R$ 9.000</h2>
+                        <h2><i class="fa-brands fa-pix"></i> 5.000</h2>
+                        <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </div>
+                    <div class="celular">
+                        <img src="assets/iphone.png">
+                        <h3>IPHONE-13</h3>
+                        <h2><i class="fa-solid fa-credit-card"></i> R$ 9.000</h2>
+                        <h2><i class="fa-brands fa-pix"></i> 5.000</h2>
+                        <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                    </div>
+                    
                 </div>
             <!--suporte-->
             <div class="Suporte">
@@ -101,5 +120,6 @@
             </div>
         </main>
     <footer>&copy; 2025 kauan.k</footer>
+    <script src="index.js"></script>
 </body>
 </html>
